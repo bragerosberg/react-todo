@@ -3,6 +3,9 @@ body {
   font-family: 'Arial', sans-serif;
   list-style-type: none;
 }
+*:focus {
+  outline: none;
+}
 
 .todo__form__button, 
 .todo__form__input {
@@ -107,6 +110,10 @@ body {
 }
 
 @media (min-width: 960px) {
+  .todo__form {
+    display: flex;
+    justify-content: center;
+  }
   .todo__app {
     margin: 0 auto;
     width: 100%;
