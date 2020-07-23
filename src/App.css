@@ -33,14 +33,19 @@ body {
 .todo__card__task,
 .todo__card__done {
   font-size: 2em;
+  border-bottom: 1px ridge black;
 }
 
 .todo__form__button, 
 .todo__list h1,
-.todo__card__task,
-.todo__card__done,
+
 .todo__card__done--button {
   color: white;
+}
+
+.todo__card__task,
+.todo__card__done {
+  color: black;
 }
 
 .todo__form {
@@ -93,6 +98,7 @@ body {
 .todo__card__done {
   background-color: #9bdeac;
   text-decoration: line-through;
+  color: rgb(82, 81, 81);
   order: 1;
 }
 
