@@ -1,9 +1,9 @@
 # React Todo
 
 ## Want to try out the application?
-Great! It is deployed at netlify, you can click [here](https://bragereacttodo.netlify.app/)
+It is deployed at netlify, you can click [here](https://bragereacttodo.netlify.app/) to try it out!
 Or access manually https://bragereacttodo.netlify.app/. 
-##
+## Responsive Design
 ![PhoneExample](phone.png)
 
 ## About the project
