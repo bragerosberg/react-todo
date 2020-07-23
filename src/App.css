@@ -1,0 +1,115 @@
+body {
+  background-color: gainsboro;
+  font-family: 'Arial', sans-serif;
+  list-style-type: none;
+}
+
+.todo__form__button, 
+.todo__form__input {
+  border-radius: 1em;
+  padding: 2em;
+}
+.todo__form {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.todo__form__input:hover,
+.todo__form__button:hover,
+.todo__card__done--button:hover {
+  cursor: pointer;
+}
+
+.todo__form,
+.todo__list h1{
+  text-align: center;
+}
+
+.todo__list h1,
+.todo__card__task,
+.todo__card__done {
+  font-size: 2em;
+}
+
+.todo__form__button, 
+.todo__list h1,
+.todo__card__task,
+.todo__card__done,
+.todo__card__done--button {
+  color: white;
+}
+
+.todo__form {
+  border: 1px solid black;
+  background-color: #222831;
+}
+
+.todo__form__input {
+  background-color: #EEEEEE;
+}
+
+.todo__form__input:hover {
+  background-color: lightcyan;
+}
+
+.todo__form__button {
+  margin-left: 1em;
+  background-color: #393e46;
+}
+
+.todo__form__button:hover {
+  background-color: #355C7D;
+}
+
+/* The Todo List  */
+.todo__list {
+  background-color: darkgrey;
+  border-bottom: ridge 3px black;
+}
+
+.todo__list__cards {
+  flex-direction: column;
+  display: flex;
+}
+
+.todo__list h1 {
+  margin: 0;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,108,121,1) 0%, rgba(0,212,255,1) 100%);  border: ridge 1px black;
+}
+
+.todo__card__task {
+  background-color: #e2979c;
+  order: 0;
+}
+
+.todo__card__task:hover {
+  background-color: #e7c0c2;
+}
+
+.todo__card__done {
+  background-color: #9bdeac;
+  text-decoration: line-through;
+  order: 1;
+}
+
+.todo__card__done:hover {
+  background-color: #c0e2c9;
+}
+
+.todo__card__done--button {
+  font-size: 13px;
+  float: right;
+  background-color: crimson;
+}
+.todo__card__done--button:hover {
+  background-color: red;
+}
+
+@media (min-width: 960px) {
+  .todo__app {
+    margin: 0 auto;
+    width: 100%;
+    background-color: gainsboro;
+  }
+}
