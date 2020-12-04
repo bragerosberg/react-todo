@@ -2,7 +2,9 @@
 A react implementation of the well known todo application. Create a tasks, set them as solved, and remove completed tasks. 
 Hosted: [here](https://bragereacttodo.netlify.app/) or access manually https://bragereacttodo.netlify.app/
 ## Test Locally
-This section will be filled out shortly.
+- Clone repo at the desired destination
+- Locate to its location, install dependecies and run ```npm i "&&" npm start```
+- It is now running, view it at localhost:3000
 
 # Article 
 - [Contents of App](#contents)
