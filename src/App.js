@@ -10,6 +10,25 @@ class App extends React.Component {
       taskInput: '',
     };
   }
+  componentDidMount = () => {
+    this.attemptStoredTodos();
+  }
+
+  componentDidUpdate = () => {
+    this.storeTodo(this.state.tasks);
+  }
+
+  storeTodo = (tasks) => { localStorage.setItem('todoStorage', JSON.stringify(tasks)) }
+
+  attemptStoredTodos = () => {
+    const getStoredTodo = localStorage.getItem('todoStorage');
+    if (getStoredTodo) this.setState({ tasks : JSON.parse(getStoredTodo)});
+  }
+
+  handleLoad = () => {
+    const res = localStorage.getItem('todoStorage');
+    this.setState({ tasks: res });
+  };
 
   appendTask = task => {
     this.setState({ tasks: [task, ...this.state.tasks] });
@@ -34,7 +53,6 @@ class App extends React.Component {
   clearInputField = () => {
     this.setState({ taskInput: '' });
   };
-
 
   render() {
     return (

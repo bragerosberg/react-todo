@@ -1,3 +1,4 @@
+@import './animation.css';
 body {
   background-color: gainsboro;
   font-family: 'Arial', sans-serif;
@@ -83,27 +84,30 @@ body {
 
 .todo__list h1 {
   margin: 0;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,108,121,1) 0%, rgba(0,212,255,1) 100%);  border: ridge 1px black;
+  background: linear-gradient(to right, #009fff, #ec2f4b);
 }
 
 .todo__card__task {
-  background-color: #e2979c;
+  animation: 2s fadeInUp;
+  background: linear-gradient(to right, #ed213a, #93291e);
+  color: white;
   order: 0;
 }
 
 .todo__card__task:hover {
-  background-color: #e7c0c2;
+  background: linear-gradient(to right, #af3342, #6d2d26);
 }
 
 .todo__card__done {
-  background-color: #9bdeac;
+  animation: 2s fadeIn;
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
   text-decoration: line-through;
-  color: rgb(82, 81, 81);
+  color: white;
   order: 1;
 }
 
 .todo__card__done:hover {
-  background-color: #c0e2c9;
+  background: linear-gradient(to right, #91d66c, #7bceb5);
 }
 
 .todo__card__done--button {
